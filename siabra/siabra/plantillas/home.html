@@ -1,0 +1,18 @@
+{%extends 'base.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+{% block contenido %}
+{% load bootstrap3 %}
+<div class="starter-template">
+<div class="jumbotron">
+<h1> {% trans "Bienvenido!" %}</h1>
+<h3>{% trans "Con SIABRA podrás reconocer y ser reconocido por otros usuarios." %}</h3>
+<h4>{% trans "La privacidad es nuestra regla fundamental." %}</h4>
+<h4>{% trans "Sube la información personal que creas conveniente y/o crea un perfil de permisos." %}</h4>
+<h4>{% trans "A través de un perfil de permisos los usuarios podrán requerir cierta parte de tu información. Aceptalo si lo crees conveniente. También puedes decidir qué información mostrar al resto de usuarios." %}</h4>
+<h4>{% trans "Para poder agregar y eliminar perfiles de permisos y saber en todo momento que información muestras, descárgate la aplicación para Android" %} <a href="{{MEDIA_URL}}SIABRA_Privacity.apk">SIABRA Privacity</a> (Min. Android GingerBread 2.3.3) .</h4>
+<h4>{% trans "Si quieres reconocer a otros usuarios, utiliza la app" %} <a href="{{MEDIA_URL}}SIABRA_Discover.apk">SIABRA Discover</a> (Min. Android IceCreamSandwich 4.0.0).</h4>
+<h4>{% trans "Si eres desarrollador, no olvides que también puedes conectar tu aplicación con SIABRA. Para más información dirígete  a la sección Desarrollador." %}</h4>
+	</div>
+	</div>
+{% endblock %}

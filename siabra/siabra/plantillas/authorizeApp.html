@@ -1,0 +1,23 @@
+{%extends 'base.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+{% load bootstrap3 %}
+
+{% block contenido %}
+		<div class="jumbotron">
+		        <h1>{% trans "Autorizar aplicación" %}</h1>
+				<h5>{% trans "La aplicación podrá ver todos tus datos, pero no modificarlos ni saber tu contraseña."%}</h5>
+				<h5>{% trans "Asegúrate siempre que la aplicación instalada sea de confianza."%}</h5>
+				<h5>{% trans "La aplicación " %}<b>{{nombreApp}}</b> {% trans "tiene la siguiente descripción:"%} </h5>
+				<h5>{{descripcion}}</h5>
+				<h4>{% trans "¿Deseas que la aplicación"%} <b>{{nombreApp}}</b> {% trans "pueda gestionar tu información?" %}</h4>
+				<form id='formulario' method='post' name='action' value='Autorizar'>{% csrf_token %}
+						<input id="id_oauth_token" name="oauth_token" type="hidden" value={{token}} />
+						<input id="id_authorize_access" name="authorize_access" type="hidden" value="True" />
+						<button type='submit' class="btn btn-success" value='Autorizar' name='Autorizar'>   {% trans "Sí"%}   </button>
+						<a class="btn btn-danger" href="{% url "principal.views.acerca" %}">{% trans "No" %}</a>
+				</form>
+
+
+		</div>
+{% endblock %}

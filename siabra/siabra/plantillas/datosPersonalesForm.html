@@ -1,0 +1,81 @@
+
+{%extends 'base.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+ {% block estiloCabecera %}
+ input[type=text]{
+   min-width:200px;
+  max-width:400px;
+}
+ {% endblock %}
+{% block contenido %}
+{% load bootstrap3 %}
+<div class="starter-template">
+<div class="jumbotron">
+<h1>{% trans "Mis datos personales."%}</h1>
+<h3>{% trans "Introduce tus datos personales."%}
+<h4>{% trans "Ningún campo es obligatorio y nadie podrá ver tus datos hasta que no lo permitas a traves de la app SIABRA Privacity. "%}</h4>
+</h3>
+
+	<form id='formulario' method='post' action=''>{%csrf_token %}
+	 <div class="row">
+        <div class="col-md-3">{% bootstrap_field user_form.first_name %}</div>
+        <div class="col-md-3">{% bootstrap_field user_form.last_name %}</div>
+        <div class="col-md-4">{% bootstrap_field user_form.email %}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">{% bootstrap_field datos_form.dni %}</div>
+        <div class="col-md-3">{% bootstrap_field datos_form.pais %}</div>
+        <div class="col-md-3">{% bootstrap_field datos_form.telefono %}</div>
+    </div>
+    <div class="row">
+    <div  class="col-md-5">{% bootstrap_field datos_form.direccion %}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">{% bootstrap_field datos_form.profesion %}</div>
+        <div class="col-md-3">{% bootstrap_field datos_form.empresa %}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">{% bootstrap_field datos_form.estatus %}</div>
+        <div class="col-md-3">{% bootstrap_field datos_form.nacimiento %}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">{% bootstrap_field datos_form.comentario %}</div>
+    </div>
+		<p><input type='submit' class="btn btn-success" value='{% trans "Confirmar" %}' name='Confirmar'/></p>
+	</form>
+	{% if exito %}
+	<div class="alert alert-success" role="alert">{% trans "Datos modificados con éxito."%}</div>
+	{% endif %}
+
+	<h4>{% trans "Si deseas desactivar tu cuenta pulsa 'Siguiente'."%}</h4>
+	<button data-toggle="modal"  class="btn btn-danger" data-target="#myModal">
+		{% trans "Siguiente" %}
+	</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">{% trans "Desactivar su cuenta"%}</h4>
+      </div>
+      <div class="modal-body">
+        <h5>{% trans "Una vez confirmado, el nombre de usuario no se podrá volver a usar y todos sus datos serán borrados."%}</h5>
+
+        <h4>{% trans "¿Estás seguro que quieres desactivar tu cuenta para siempre?"%}</h4>
+
+      </div>
+      <div class="modal-footer">
+
+        <form id='eliminar' method="post" value='eliminar'>{%csrf_token %}
+
+			<input type='submit' class="btn btn-danger" value='{% trans "Sí" %}' name='eliminar'/>
+			<button type="button" class="btn btn-default" data-dismiss="modal">{% trans "No"%}</button>
+		</form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+	</div>
+	</div>
+{% endblock %}

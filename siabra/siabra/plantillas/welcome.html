@@ -1,0 +1,51 @@
+{%extends 'welcomeBase.html' %}
+{% load i18n %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{%block contenido%}
+
+	<form class="form-signin" id='formulario' method='post' name='action' value='Registrar'> {% csrf_token %}
+		<h1> {% trans "Regístrese !" %}</h1>
+		{% bootstrap_field formularioRegister.username %}
+		{% bootstrap_field formularioRegister.email %}
+		{% bootstrap_field formularioRegister.password1 %}
+		{% bootstrap_field formularioRegister.password2 %}
+		<b>{% trans "Introduzca el siguiente captcha:" %} </b>
+		{% bootstrap_field formularioRegister.captcha %}
+		<button class="btn btn-lg btn-primary btn-block" type='submit' value='Registrar' name='Registrar'>{% trans "Registrar" %}</button>
+	</form>
+
+
+
+	{%if eliminado %}
+	<script type="text/javascript">
+			alert("Su cuenta ha sido eliminada con exito.");
+	</script>
+	{% endif %}
+
+	{% bootstrap_javascript jquery=1 %}
+{% endblock %}
+{%block pie %}
+
+ <div id="footer" class="text-center">
+ <div class="container">
+                <br></br>
+      	<p class="text-center">
+      	    {% trans "Visualice el 'Aviso Legal' en " %}<a href="{% url "principal.views.acerca_no_logueado" %}">{% trans "Acerca." %} </a>
+      		<form  style="display:inline;" name="setLangEnglish" action="/i18n/setlang/" method="POST">{% csrf_token %}
+                <input name="next" type="hidden" value="/" />
+                <input type="hidden" name="language" value="en" />
+                <a href="#" onclick="document.setLangEnglish.submit();return false;"><img style="max-width:20px; margin-top: -7px;"
+                    src="{{STATIC_URL}}img/en_flag.png">
+            </form>
+            <form style="display:inline;" name="setLangSpanish" action="/i18n/setlang/" method="POST">{% csrf_token %}
+                <input name="next" type="hidden" value="/" />
+                <input type="hidden" name="language" value="es" />
+                <a href="#" onclick="document.setLangSpanish.submit();return false;"><img style="max-width:30px; margin-top: -7px;"
+                src="{{STATIC_URL}}img/es_flag.png">  </a>
+            </form>
+        </p>
+    </div>
+    </div>
+{% endblock %}

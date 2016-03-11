@@ -1,0 +1,98 @@
+{%extends 'base.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+{% block contenido %}
+{% load bootstrap3 %}
+<div class="starter-template">
+<div class="jumbotron">
+<h1> {% trans "Mi perfil."%}</h1>
+	{% if creado %}
+		<h4>{% trans "Por el momento solo es posible un perfil de permisos. Este perfil tiene el siguiente comentario:"%}</h4>
+		<h5>
+		{{ descripcion }}
+		</h5>
+		<h4>{% trans "Y requiere ver los siguientes permisos :"%}</h4>
+		{% for valor in permisos %}
+   			 {{valor}}
+		{% endfor %}
+		<h4>{% trans "Para compartir este perfil, usa el siguiente código:"%}</h4>
+		<h5>{{codigo}}</h5>
+		<h4>{% trans "Si deseas eliminar el perfil existente, pulsa 'Siguiente'."%}</h4>
+
+		<button class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+		{% trans "Siguiente"%}
+		</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">{% trans "Eliminar perfil"%}</h4>
+      </div>
+      <div class="modal-body">
+        {% trans "¿Estas seguro que quieres eliminar el perfil?"%}
+      </div>
+      <div class="modal-footer">
+
+        <form id='eliminar' method="post" value='eliminar'>{%csrf_token %}
+
+			<input type='submit' class="btn btn-danger" value='{% trans "Sí" %}' name='eliminar'/>
+			<button type="button" class="btn btn-default" data-dismiss="modal">{% trans "No"%}</button>
+		</form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+	{% endif %}
+	{% if not creado %}
+	<h3>{% trans "Crea un perfil para acordar permisos con otros usuarios."%}</h3>
+	<h4>{% trans "Una vez creado el perfil, un código será generado y este perfil no se podrá modificar." %}
+	 {% trans "No obstante, podrás eliminarlo y crear uno nuevo." %}<h4>
+	<form id='formulario' method='post' action='' class="form-horizontal" value='Confirmar'>{%csrf_token %}
+		{% bootstrap_field formulario.descripcion %}
+		<h5>{% trans "Marca los elementos que desearías ver:" %}</h5>
+        <div class="row">
+        <div class="col-md-3">{% bootstrap_field formulario.nombre %}</div>
+        <div class="col-md-3">{% bootstrap_field formulario.apellidos %}</div>
+        <div class="col-md-3">{% bootstrap_field formulario.dni %}</div>
+         <div class="col-md-3">{% bootstrap_field formulario.direccion %}</div>
+      </div>
+		<div class="row">
+        <div class="col-md-3">{% bootstrap_field formulario.telefono %}</div>
+        <div class="col-md-3">{% bootstrap_field formulario.email %}</div>
+        <div class="col-md-3">{% bootstrap_field formulario.estatus %}</div>
+         <div class="col-md-3">{% bootstrap_field formulario.pais %}</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">{% bootstrap_field formulario.facebook %}</div>
+        <div class="col-md-3">{% bootstrap_field formulario.twitter %}</div>
+        <div class="col-md-3">{% bootstrap_field formulario.linkedin %}</div>
+         <div class="col-md-3">{% bootstrap_field formulario.webPersonal %}</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">{% bootstrap_field formulario.profesion %}</div>
+        <div class="col-md-3">{% bootstrap_field formulario.empresa %}</div>
+        <div class="col-md-3">{% bootstrap_field formulario.webProfesional %}</div>
+         <div class="col-md-3">{% bootstrap_field formulario.comentario %}</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">{% bootstrap_field formulario.nacimiento %}</div>
+      </div>
+		<p><input type='submit' class="btn btn-success" value='{% trans "Confirmar" %}' name='Confirmar'/></p>
+	</form>
+
+    {%if eliminado %}
+	<script type="text/javascript">
+			alert("El perfil ha sido eliminado con éxito.");
+	</script>
+	{% endif %}
+	{% endif %}
+	</div>
+	</div>
+{% endblock %}
+

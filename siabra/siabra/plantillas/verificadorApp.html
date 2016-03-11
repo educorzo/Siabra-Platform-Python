@@ -1,0 +1,13 @@
+{%extends 'base.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+{% load bootstrap3 %}
+
+{% block contenido %}
+<div class="jumbotron">
+        <h1>{% trans "Autorizar aplicación" %}</h1>
+		<h4>{% trans "Vuelve a la aplicación e introduce el siguiente verificador para completar el proceso de autorización." %}<h4>
+		<h1>{{verificador}}</h1>
+
+</div>
+{% endblock %}

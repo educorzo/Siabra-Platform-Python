@@ -1,0 +1,15 @@
+{%extends 'welcomeBase.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+{% block contenido %}
+    <h1>{%trans  "Autorizar aplicación" %}</h1>
+    <h3>{%trans "Para poder autorizar la aplicación debes estar logueado." %}</h3>
+	<form id='formulario'  method='post' role="form" name='action' value='login'>{% csrf_token %}
+		<b>{%trans "Usuario"%}</b>
+		<input class='form-control' type="text" name="username">
+		<b>{%trans "Password"%}</b>
+		<input class='form-control' type="password" name="password">
+		<button type='submit' class="btn btn-primary" value='Login' name='Login'>{%trans "Login"%}</button>
+	</form>
+        <h6 style="color:#ff0000">{{error}}</h6>
+{% endblock %}

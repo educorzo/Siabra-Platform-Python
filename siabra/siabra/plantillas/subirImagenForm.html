@@ -1,0 +1,44 @@
+{%extends 'base.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+{% block estiloCabecera %}
+.help-block{
+	display:none
+}
+{% endblock %}
+{% block contenido %}
+{% load bootstrap3 %}
+<div class="starter-template">
+<div class="jumbotron">
+<h1> {% trans "Mi imagen." %}</h1>
+{% if not creado %}
+
+	<h2>{% trans "Sube la imagen por la que serás reconocido." %}</h2>
+	<h4>{% trans "Temporalmente no será posible modificar la imagen asociada al usuario." %}</h4>
+
+
+	<form  method="post" enctype="multipart/form-data">{% csrf_token %}
+    	<h5>{% trans "Actualmente se realiza un reconocimiento de imagenes, no de caras." %}</h5>
+	    <h5>{% trans "Por esta razón, y para obtener mejores resultados, intente utilizar una imagen que no tenga fondos lisos u homogéneos."%}</h5>
+	    <h5> {% trans "Además intente que la imagen no este quemada por la luz" %} </h5>
+        {% bootstrap_form formulario %}
+
+        <input type="submit" class="btn btn-success" value="Enviar" />
+    </form>
+
+    {%if Error%}
+	    <span class="help-block">{% trans "La imagen ya ha sido subida por otro usuario." %}</span>
+		<h5>{% trans "Si la imagen es personal, vulnera su privacidad o tiene derechos de autor, contacte con nosotros." %}</h5>
+	{%endif%}
+	{% else %}
+    <h2>{% trans "Actualmente tienes una imagen en el servidor:" %}</h2>
+    <img class="img-responsive"
+             src="{{MEDIA_URL}}{{ imagen }}">
+    <h4>{% trans "La imagen podrá se reconocida pasados unos minutos de su subida."%}</h4>
+    <h4>{% trans "Temporalmente no es posible modificar dicha imagen en la página web."%}</h4>
+    <h4>{% trans "Si desea cambiarla, deberá enviarnos la nueva imagen con una fotocopia del DNI a nuestro correo electrónico." %}</h4>
+    <h4>{% trans "¡Sentimos las molestias!" %}</h4>
+    {% endif %}
+	</div>
+	</div>
+{% endblock %}

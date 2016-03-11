@@ -1,0 +1,26 @@
+{%extends 'base.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+
+{% block contenido %}
+{% load bootstrap3 %}
+<link media='screen' type='text/css' rel='stylesheet' href='{{STATIC_URL}}css/estilo.css'></link>
+<div class="starter-template">
+<div class="jumbotron">
+<h1> {% trans "Mis paginas web." %}</h1>
+<h4>{% trans "Recuerde que ningún campo es obligatorio." %}</h4>
+	<!--<form class="pure-form pure-form-aligned" id='formulario' method='post' action=''>-->
+	<form class="form" id='formulario' method='post' action=''>
+	{%csrf_token %}
+
+	{% bootstrap_form formulario%}
+
+		<p><input type='submit' value='{% trans "Confirmar" %}' class="btn btn-success"/></p>
+
+	</form>
+	{% if exito %}
+	<div class="alert alert-success" role="alert">{% trans "Datos modificados con éxito." %}</div>
+	{% endif %}
+	</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+body {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+
+.form-signin .form-group {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  font-size: 16px;
+}
+.form-signin .form-group:focus {
+  z-index: 2;
+}
+.form-signin input[type="username"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.control-label {
+display:none
+}
+.navbar-inverse{
+background-image: -webkit-linear-gradient(#559e60, #4e9158 50%, #407749);
+background-image: linear-gradient(#559e60, #4e9158 50%, #407749);
+background-repeat: no-repeat;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff559e60', endColorstr='#ff407749', GradientType=0);
+filter: none;
+border: 1px solid #2c5131;
+text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+}
+.navbar-inverse .navbar-brand {
+color: #FFF;
+}

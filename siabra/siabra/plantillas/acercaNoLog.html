@@ -1,0 +1,22 @@
+{%extends 'welcomeBase.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+{% block contenido %}
+{% load bootstrap3 %}
+<div class="starter-template">
+	<div class="jumbotron">
+		<h1>SIABRA</h1>
+<h2> {% trans "Sistema de Información Adaptativo Basado en Realidad Aumentada." %}</h2>
+<h3>{% trans "Proyecto de fin de carrera 2013/2014." %}</h3>
+<h4>{% trans "El fin de este proyecto es desarrollar una plataforma donde los usuarios puedan reconocerse entre ellos por medio de Realidad Aumentada. SIABRA se podría dividir en cuatro modulos, su pagina web, que estas visitando, SIABRA Privacity la Android App que permite saber que información se muestra al resto de usuarios, la app SIABRA Discover para reconocerlos a través de Realidad Aumentada y un web services para conectar aplicaciones con la plataforma." %}</h4>
+<h3>{% trans "Aviso legal" %}</h3>
+<h4>{% trans "Los datos almacenados por el usuario solo serán mostrados a los que éste decida. SIABRA no utilizara dichos datos para ningún fin; como este proyecto es meramente educacional no se puede garantizar la seguridad de los datos al 100% ." %}</h4>
+<h3>{% trans "Información" %}</h3>
+<h4>{% trans "El creador de este proyecto es Eduardo José Corzo Peña en colaboración con la Universidad de Granada." %}</h4>
+<h4>{% trans "Email de contacto ecorzoARROBAcorreoPUNTOugrPUNTOes ." %}</h4>
+
+	</div>
+
+</div>
+
+{% endblock %}

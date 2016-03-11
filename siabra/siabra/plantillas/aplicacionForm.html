@@ -1,0 +1,72 @@
+{%extends 'base.html' %}
+{% load i18n %}
+<meta charset="utf-8" />
+{% block contenido %}
+{% load bootstrap3 %}
+<div class="starter-template">
+<div class="jumbotron">
+<h1> {% trans "Mi aplicación." %}</h1>
+	{% if creado %}
+		<h4>{% trans "Por el momento solo se puede crear una aplicación por usuario."%}</h4>
+		<h4> {%trans "La aplicación" %} <b>{{nombre}}</b> {%trans "tiene la siguiente descripción:"%}</h4>
+		<h5>
+		{{ descripcion }}
+		</h5>
+		<h5>{%trans "Con clave:"%} <b>{{key}}</b> {%trans "y secreto:"%} <b>{{secret}} .</b></h5>
+		<h5>{%trans "Jamás revele estas claves." %}</h5>
+		<h5>{%trans "Temporalmente no es posible utilizar la funcionalidad callback, por ello escribe como 'url_callback' la palabra 'oob' en tu aplicación."  %}</h5>
+		<h4>{%trans "Si deseas eliminar la aplicación existente, pulsa 'Siguiente'."%}</h4>
+
+		<button class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+		{%trans "Siguiente"%}
+		</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">{%trans "Eliminar aplicación"%}</h4>
+      </div>
+      <div class="modal-body">
+        {%trans "¿Estas seguro que quieres eliminar la aplicación?"%}
+      </div>
+      <div class="modal-footer">
+
+        <form id='eliminar' method="post" value='eliminar'>{%csrf_token %}
+
+			<input type='submit' class="btn btn-danger" value='{% trans "Sí" %}' name='eliminar'/>
+			<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+		</form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+	{% endif %}
+	{% if not creado %}
+	<h3>{%trans "Registra tu aplicación para conectar con SIABRA."%}</h3>
+	<h4>{%trans "Una vez registrada la aplicación, se ofrecerán las claves Oauth y esta aplicación no se podrá modificar. No obstante, podrás eliminarla y crear una nueva." %}<h4>
+	<form id='formulario' method='post' action=''>
+	{%csrf_token %}
+	<div class="row">
+	<div class="col-md-3">	{% bootstrap_field formulario.name %}</div>
+	</div>
+
+		{% bootstrap_field formulario.description %}
+		<p><input type='submit' class="btn btn-success" value='{% trans "Confirmar" %}' name='Confirmar'/></p>
+	</form>
+    {%if eliminado %}
+	<script type="text/javascript">
+			alert("La aplicación ha sido eliminada con éxito.");
+	</script>
+	{% endif %}
+	{% endif %}
+	</div>
+	</div>
+{% endblock %}
+
+

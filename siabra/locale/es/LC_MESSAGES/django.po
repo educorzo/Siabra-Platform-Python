@@ -1,0 +1,682 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-29 12:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Language: es_ES\n"
+"X-Source-Language: C\n"
+
+#: principal/forms.py:65
+msgid "30 caracteres o menos. Solo letras, numeros y @/./+/-/_"
+msgstr "30 caracteres o menos. Solo letras, numeros y @/./+/-/_"
+
+#: principal/forms.py:66
+msgid "Contraseña (Al menos 6 caracteres)"
+msgstr "Contraseña (Al menos 6 caracteres)"
+
+#: principal/forms.py:67
+msgid "Repita contraseña"
+msgstr "Repita contraseña"
+
+#: principal/forms.py:68
+msgid "Introduzca lo siguiente"
+msgstr "Introduzca lo siguiente"
+
+#: principal/forms.py:75
+msgid "Las contrasenas no son iguales."
+msgstr "Las contraseñas no son iguales."
+
+#: principal/forms.py:82
+msgid "La contraseña tiene que tener al menos 6 caracteres."
+msgstr "La contraseña tiene que tener al menos 6 caracteres."
+
+#: principal/forms.py:107 principal/forms.py:139
+msgid "DNI"
+msgstr "DNI"
+
+#: principal/forms.py:108 principal/forms.py:142
+msgid "Estatus"
+msgstr "Estatus"
+
+#: principal/forms.py:109 principal/forms.py:141
+msgid "Empresa"
+msgstr "Empresa"
+
+#: principal/forms.py:110 principal/forms.py:137
+msgid "Comentario"
+msgstr "Comentario"
+
+#: principal/forms.py:111 principal/forms.py:148
+msgid "Profesión"
+msgstr "Profesión"
+
+#: principal/forms.py:112 principal/forms.py:147
+msgid "País"
+msgstr "País"
+
+#: principal/forms.py:113 principal/forms.py:149
+msgid "Teléfono"
+msgstr "Teléfono"
+
+#: principal/forms.py:114 principal/forms.py:138
+msgid "Dirección"
+msgstr "Dirección"
+
+#: principal/forms.py:115 principal/forms.py:146
+msgid "Fecha de nacimiento"
+msgstr "Fecha de nacimiento"
+
+#: principal/forms.py:131
+msgid "Web Personal"
+msgstr "Web Personal"
+
+#: principal/forms.py:132
+msgid "Web Profesional"
+msgstr "Web Profesional"
+
+#: principal/forms.py:136
+msgid "Apellidos"
+msgstr "Apellidos"
+
+#: principal/forms.py:140
+msgid "Email"
+msgstr "Email"
+
+#: principal/forms.py:145
+msgid "Nombre"
+msgstr "Nombre"
+
+#: principal/forms.py:151
+msgid "Web personal"
+msgstr "Web personal"
+
+#: principal/forms.py:152
+msgid "Web profesional"
+msgstr "Web profesional"
+
+#: principal/forms.py:159
+msgid "Descripción"
+msgstr "Descripción"
+
+#: principal/forms.py:176
+msgid "Nombre de la aplicación :"
+msgstr "Nombre de la aplicación :"
+
+#: principal/forms.py:177
+msgid "Descripción :"
+msgstr "Descripción :"
+
+#: principal/forms.py:183
+msgid "Ya existe una aplicación con ese nombre."
+msgstr "Ya existe una aplicación con ese nombre."
+
+#: principal/models.py:14
+msgid "Ej. Soltero."
+msgstr "Ej.Soltero."
+
+#: principal/models.py:17
+msgid "Ej. Hola! Estoy usando SIABRA."
+msgstr "Ej. Hola! Estoy usando SIABRA."
+
+#: principal/models.py:20
+msgid "Ej. dd/mm/aaaa"
+msgstr "Ej. dd/mm/aaaa"
+
+#: principal/models.py:30
+msgid "Ej. www.facebook.com/NombreApellido"
+msgstr "Ej. www.facebook.com/NombreApellido"
+
+#: principal/models.py:31
+msgid "Ej. www.twitter.com/Usuario"
+msgstr "Ej. www.twitter.com/Usuario"
+
+#: principal/models.py:32
+msgid "Ej. es.linkedin.com/in/eduardocorzo/"
+msgstr "Ej. es.linkedin.com/in/eduardocorzo/"
+
+#: principal/models.py:33
+msgid "Ej. www.pepe.wordpress.com"
+msgstr "Ej. www.pepe.wordpress.com"
+
+#: principal/models.py:34
+msgid "Ej. http://biosearchlife.com"
+msgstr "Ej. http://ugr.es"
+
+#: principal/views.py:62 principal/views.py:271 principal/views.py:300
+msgid "El usuario no esta activo"
+msgstr "El usuario no esta activo"
+
+#: principal/views.py:66 principal/views.py:302
+msgid "Contraseña o usuario incorrecto"
+msgstr "Contraseña o usuario incorrecto"
+
+#: principal/views.py:273
+msgid "Usuario o contrasena incorrecto"
+msgstr "Usuario o contrasena incorrecto"
+
+#: siabra/plantillas/acerca.html:9 siabra/plantillas/acercaNoLog.html:9
+msgid "Sistema de Información Adaptativo Basado en Realidad Aumentada."
+msgstr "Sistema de Información Adaptativo Basado en Realidad Aumentada."
+
+#: siabra/plantillas/acerca.html:10 siabra/plantillas/acercaNoLog.html:10
+msgid "Proyecto de fin de carrera 2013/2014."
+msgstr "Proyecto de fin de carrera 2013/2014."
+
+#: siabra/plantillas/acerca.html:11
+msgid ""
+"El fin de este proyecto es desarrollar una plataforma donde los usuarios "
+"puedan reconocerse entre ellos por medio de Realidad Aumentada. SIABRA se "
+"podría dividir en cuatro módulos, su página web, que estas visitando, SIABRA "
+"Privacity la Android App que permite saber que información se muestra al "
+"resto de usuarios, la app SIABRA Discover para reconocerlos a través de "
+"Realidad Aumentada y un web services para conectar aplicaciones con la "
+"plataforma."
+msgstr ""
+"El fin de este proyecto es desarrollar una plataforma donde los usuarios "
+"puedan reconocerse entre ellos por medio de Realidad Aumentada. SIABRA se "
+"podría dividir en cuatro módulos, su página web, que estas visitando, SIABRA "
+"Privacity la Android App que permite saber que información se muestra al "
+"resto de usuarios, la app SIABRA Discover para reconocerlos a través de "
+"Realidad Aumentada y un web services para conectar aplicaciones con la "
+"plataforma."
+
+#: siabra/plantillas/acerca.html:12
+msgid "Aviso legal."
+msgstr "Aviso legal."
+
+#: siabra/plantillas/acerca.html:13
+msgid ""
+"Los datos almacenados por el usuario solo serán mostrados a los que éste "
+"decida. SIABRA no utilizará dichos datos para ningún fin; como este proyecto "
+"es meramente educacional no se puede garantizar la seguridad de los datos al "
+"100"
+msgstr ""
+"Los datos almacenados por el usuario solo serán mostrados a los que éste "
+"decida. SIABRA no utilizará dichos datos para ningún fin; como este proyecto "
+"es meramente educacional no se puede garantizar la seguridad de los datos al "
+"100"
+
+#: siabra/plantillas/acerca.html:14
+msgid "Información."
+msgstr "Información."
+
+#: siabra/plantillas/acerca.html:15 siabra/plantillas/acercaNoLog.html:15
+msgid ""
+"El creador de este proyecto es Eduardo José Corzo Peña en colaboración con "
+"la Universidad de Granada."
+msgstr ""
+"El creador de este proyecto es Eduardo José Corzo Peña en colaboración con "
+"la Universidad de Granada."
+
+#: siabra/plantillas/acerca.html:16 siabra/plantillas/acercaNoLog.html:16
+msgid "Email de contacto ecorzoARROBAcorreoPUNTOugrPUNTOes ."
+msgstr "Email de contacto ecorzoARROBAcorreoPUNTOugrPUNTOes ."
+
+#: siabra/plantillas/acercaNoLog.html:11
+msgid ""
+"El fin de este proyecto es desarrollar una plataforma donde los usuarios "
+"puedan reconocerse entre ellos por medio de Realidad Aumentada. SIABRA se "
+"podría dividir en cuatro modulos, su pagina web, que estas visitando, SIABRA "
+"Privacity la Android App que permite saber que información se muestra al "
+"resto de usuarios, la app SIABRA Discover para reconocerlos a través de "
+"Realidad Aumentada y un web services para conectar aplicaciones con la "
+"plataforma."
+msgstr ""
+"El fin de este proyecto es desarrollar una plataforma donde los usuarios "
+"puedan reconocerse entre ellos por medio de Realidad Aumentada. SIABRA se "
+"podría dividir en cuatro modulos, su pagina web, que estas visitando, SIABRA "
+"Privacity la Android App que permite saber que información se muestra al "
+"resto de usuarios, la app SIABRA Discover para reconocerlos a través de "
+"Realidad Aumentada y un web services para conectar aplicaciones con la "
+"plataforma."
+
+#: siabra/plantillas/acercaNoLog.html:12
+msgid "Aviso legal"
+msgstr "Aviso legal"
+
+#: siabra/plantillas/acercaNoLog.html:13
+#, python-format
+msgid ""
+"Los datos almacenados por el usuario solo serán mostrados a los que éste "
+"decida. SIABRA no utilizara dichos datos para ningún fin; como este proyecto "
+"es meramente educacional no se puede garantizar la seguridad de los datos al "
+"100%% ."
+msgstr ""
+"Los datos almacenados por el usuario solo serán mostrados a los que éste "
+"decida. SIABRA no utilizara dichos datos para ningún fin; como este proyecto "
+"es meramente educacional no se puede garantizar la seguridad de los datos al "
+"100%% ."
+
+#: siabra/plantillas/acercaNoLog.html:14
+msgid "Información"
+msgstr "Información"
+
+#: siabra/plantillas/aplicacionForm.html:8
+msgid "Mi aplicación."
+msgstr "Mi aplicación."
+
+#: siabra/plantillas/aplicacionForm.html:10
+msgid "Por el momento solo se puede crear una aplicación por usuario."
+msgstr "Por el momento solo se puede crear una aplicación por usuario."
+
+#: siabra/plantillas/aplicacionForm.html:11
+msgid "La aplicación"
+msgstr "La aplicación"
+
+#: siabra/plantillas/aplicacionForm.html:11
+#: siabra/plantillas/authorizeApp.html:11
+msgid "tiene la siguiente descripción:"
+msgstr "tiene la siguiente descripción:"
+
+#: siabra/plantillas/aplicacionForm.html:15
+msgid "Con clave:"
+msgstr "Con clave:"
+
+#: siabra/plantillas/aplicacionForm.html:15
+msgid "y secreto:"
+msgstr "y secreto:"
+
+#: siabra/plantillas/aplicacionForm.html:16
+msgid "Jamás revele estas claves."
+msgstr "Jamás revele estas claves."
+
+#: siabra/plantillas/aplicacionForm.html:17
+msgid ""
+"Temporalmente no es posible utilizar la funcionalidad callback, por ello "
+"escribe como 'url_callback' la palabra 'oob' en tu aplicación."
+msgstr ""
+"Temporalmente no es posible utilizar la funcionalidad callback, por ello "
+"escribe como 'url_callback' la palabra 'oob' en tu aplicación."
+
+#: siabra/plantillas/aplicacionForm.html:18
+msgid "Si deseas eliminar la aplicación existente, pulsa 'Siguiente'."
+msgstr "Si deseas eliminar la aplicación existente, pulsa 'Siguiente'."
+
+#: siabra/plantillas/aplicacionForm.html:21
+#: siabra/plantillas/datosPersonalesForm.html:53
+#: siabra/plantillas/perfilForm.html:23
+msgid "Siguiente"
+msgstr "Siguiente"
+
+#: siabra/plantillas/aplicacionForm.html:28
+msgid "Eliminar aplicación"
+msgstr "Eliminar aplicación"
+
+#: siabra/plantillas/aplicacionForm.html:31
+msgid "¿Estas seguro que quieres eliminar la aplicación?"
+msgstr "¿Estas seguro que quieres eliminar la aplicación?"
+
+#: siabra/plantillas/aplicacionForm.html:37
+#: siabra/plantillas/authorizeApp.html:17
+#: siabra/plantillas/datosPersonalesForm.html:72
+#: siabra/plantillas/perfilForm.html:39
+msgid "Sí"
+msgstr "Sí"
+
+#: siabra/plantillas/aplicacionForm.html:51
+msgid "Registra tu aplicación para conectar con SIABRA."
+msgstr "Registra tu aplicación para conectar con SIABRA."
+
+#: siabra/plantillas/aplicacionForm.html:52
+msgid ""
+"Una vez registrada la aplicación, se ofrecerán las claves Oauth y esta "
+"aplicación no se podrá modificar. No obstante, podrás eliminarla y crear una "
+"nueva."
+msgstr ""
+"Una vez registrada la aplicación, se ofrecerán las claves Oauth y esta "
+"aplicación no se podrá modificar. No obstante, podrás eliminarla y crear una "
+"nueva."
+
+#: siabra/plantillas/aplicacionForm.html:60
+#: siabra/plantillas/datosPersonalesForm.html:45
+#: siabra/plantillas/paginasWebForm.html:18 siabra/plantillas/perfilForm.html:86
+msgid "Confirmar"
+msgstr "Confirmar"
+
+#: siabra/plantillas/authorizeApp.html:8 siabra/plantillas/login.html:5
+#: siabra/plantillas/verificadorApp.html:8
+msgid "Autorizar aplicación"
+msgstr "Autorizar aplicación"
+
+#: siabra/plantillas/authorizeApp.html:9
+msgid ""
+"La aplicación podrá ver todos tus datos, pero no modificarlos ni saber tu "
+"contraseña."
+msgstr ""
+"La aplicación podrá ver todos tus datos, pero no modificarlos ni saber tu "
+"contraseña."
+
+#: siabra/plantillas/authorizeApp.html:10
+msgid "Asegúrate siempre que la aplicación instalada sea de confianza."
+msgstr "Asegúrate siempre que la aplicación instalada sea de confianza."
+
+#: siabra/plantillas/authorizeApp.html:11
+msgid "La aplicación "
+msgstr "La aplicación "
+
+#: siabra/plantillas/authorizeApp.html:13
+msgid "¿Deseas que la aplicación"
+msgstr "¿Deseas que la aplicación"
+
+#: siabra/plantillas/authorizeApp.html:13
+msgid "pueda gestionar tu información?"
+msgstr "pueda gestionar tu información?"
+
+#: siabra/plantillas/authorizeApp.html:18
+#: siabra/plantillas/datosPersonalesForm.html:73
+#: siabra/plantillas/perfilForm.html:40
+msgid "No"
+msgstr "No"
+
+#: siabra/plantillas/base.html:36
+msgid "Mis datos personales"
+msgstr "Mis datos personales"
+
+#: siabra/plantillas/base.html:37
+msgid "Mis páginas web"
+msgstr "Mis páginas web"
+
+#: siabra/plantillas/base.html:38
+msgid "Mi perfil"
+msgstr "Mi perfil"
+
+#: siabra/plantillas/base.html:39
+msgid "Mi imagen"
+msgstr "Mi imagen"
+
+#: siabra/plantillas/base.html:41
+msgid "Desarrollador"
+msgstr "Desarrollador"
+
+#: siabra/plantillas/base.html:43
+msgid "Mi aplicación"
+msgstr "Mi aplicación"
+
+#: siabra/plantillas/base.html:44
+msgid "Documentación"
+msgstr "Documentación"
+
+#: siabra/plantillas/base.html:47
+msgid "Cerrar sesión"
+msgstr "Cerrar sesión"
+
+#: siabra/plantillas/base.html:63 siabra/plantillas/welcome.html:32
+msgid "Acerca."
+msgstr "Acerca."
+
+#: siabra/plantillas/datosPersonalesForm.html:15
+msgid "Mis datos personales."
+msgstr "Mis datos personales."
+
+#: siabra/plantillas/datosPersonalesForm.html:16
+msgid "Introduce tus datos personales."
+msgstr "Introduce tus datos personales."
+
+#: siabra/plantillas/datosPersonalesForm.html:17
+msgid ""
+"Ningún campo es obligatorio y nadie podrá ver tus datos hasta que no lo "
+"permitas a traves de la app SIABRA Privacity. "
+msgstr ""
+"Ningún campo es obligatorio y nadie podrá ver tus datos hasta que no lo "
+"permitas a traves de la app SIABRA Privacity. "
+
+#: siabra/plantillas/datosPersonalesForm.html:48
+#: siabra/plantillas/paginasWebForm.html:22
+msgid "Datos modificados con éxito."
+msgstr "Datos modificados con éxito."
+
+#: siabra/plantillas/datosPersonalesForm.html:51
+msgid "Si deseas desactivar tu cuenta pulsa 'Siguiente'."
+msgstr "Si deseas desactivar tu cuenta pulsa 'Siguiente'."
+
+#: siabra/plantillas/datosPersonalesForm.html:60
+msgid "Desactivar su cuenta"
+msgstr "Desactivar su cuenta"
+
+#: siabra/plantillas/datosPersonalesForm.html:63
+msgid ""
+"Una vez confirmado, el nombre de usuario no se podrá volver a usar y todos "
+"sus datos serán borrados."
+msgstr ""
+"Una vez confirmado, el nombre de usuario no se podrá volver a usar y todos "
+"sus datos serán borrados."
+
+#: siabra/plantillas/datosPersonalesForm.html:65
+msgid "¿Estás seguro que quieres desactivar tu cuenta para siempre?"
+msgstr "¿Estás seguro que quieres desactivar tu cuenta para siempre?"
+
+#: siabra/plantillas/home.html:8
+msgid "Bienvenido!"
+msgstr "Bienvenido!"
+
+#: siabra/plantillas/home.html:9
+msgid "Con SIABRA podrás reconocer y ser reconocido por otros usuarios."
+msgstr "Con SIABRA podrás reconocer y ser reconocido por otros usuarios."
+
+#: siabra/plantillas/home.html:10
+msgid "La privacidad es nuestra regla fundamental."
+msgstr "La privacidad es nuestra regla fundamental."
+
+#: siabra/plantillas/home.html:11
+msgid ""
+"Sube la información personal que creas conveniente y/o crea un perfil de "
+"permisos."
+msgstr ""
+"Sube la información personal que creas conveniente y/o crea un perfil de "
+"permisos."
+
+#: siabra/plantillas/home.html:12
+msgid ""
+"A través de un perfil de permisos los usuarios podrán requerir cierta parte "
+"de tu información. Aceptalo si lo crees conveniente. También puedes decidir "
+"qué información mostrar al resto de usuarios."
+msgstr ""
+"A través de un perfil de permisos los usuarios podrán requerir cierta parte "
+"de tu información. Aceptalo si lo crees conveniente. También puedes decidir "
+"qué información mostrar al resto de usuarios."
+
+#: siabra/plantillas/home.html:13
+msgid ""
+"Para poder agregar y eliminar perfiles de permisos y saber en todo momento "
+"que información muestras, descárgate la aplicación para Android"
+msgstr ""
+"Para poder agregar y eliminar perfiles de permisos y saber en todo momento "
+"que información muestras, descárgate la aplicación para Android"
+
+#: siabra/plantillas/home.html:14
+msgid "Si quieres reconocer a otros usuarios, utiliza la app"
+msgstr "Si quieres reconocer a otros usuarios, utiliza la app"
+
+#: siabra/plantillas/home.html:15
+msgid ""
+"Si eres desarrollador, no olvides que también puedes conectar tu aplicación "
+"con SIABRA. Para más información dirígete  a la sección Desarrollador."
+msgstr ""
+"Si eres desarrollador, no olvides que también puedes conectar tu aplicación "
+"con SIABRA. Para más información dirígete  a la sección Desarrollador."
+
+#: siabra/plantillas/login.html:6
+msgid "Para poder autorizar la aplicación debes estar logueado."
+msgstr "Para poder autorizar la aplicación debes estar logueado."
+
+#: siabra/plantillas/login.html:8
+msgid "Usuario"
+msgstr "Usuario"
+
+#: siabra/plantillas/login.html:10 siabra/plantillas/welcomeBase.html:37
+msgid "Password"
+msgstr "Contraseña"
+
+#: siabra/plantillas/login.html:12
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: siabra/plantillas/paginasWebForm.html:10
+msgid "Mis paginas web."
+msgstr "Mis paginas web."
+
+#: siabra/plantillas/paginasWebForm.html:11
+msgid "Recuerde que ningún campo es obligatorio."
+msgstr "Recuerde que ningún campo es obligatorio."
+
+#: siabra/plantillas/perfilForm.html:8
+msgid "Mi perfil."
+msgstr "Mi perfil."
+
+#: siabra/plantillas/perfilForm.html:10
+msgid ""
+"Por el momento solo es posible un perfil de permisos. Este perfil tiene el "
+"siguiente comentario:"
+msgstr ""
+"Por el momento solo es posible un perfil de permisos. Este perfil tiene el "
+"siguiente comentario:"
+
+#: siabra/plantillas/perfilForm.html:14
+msgid "Y requiere ver los siguientes permisos :"
+msgstr "Y requiere ver los siguientes permisos :"
+
+#: siabra/plantillas/perfilForm.html:18
+msgid "Para compartir este perfil, usa el siguiente código:"
+msgstr "Para compartir este perfil, usa el siguiente código:"
+
+#: siabra/plantillas/perfilForm.html:20
+msgid "Si deseas eliminar el perfil existente, pulsa 'Siguiente'."
+msgstr "Si deseas eliminar el perfil existente, pulsa 'Siguiente'."
+
+#: siabra/plantillas/perfilForm.html:30
+msgid "Eliminar perfil"
+msgstr "Eliminar perfil"
+
+#: siabra/plantillas/perfilForm.html:33
+msgid "¿Estas seguro que quieres eliminar el perfil?"
+msgstr "¿Estas seguro que quieres eliminar el perfil?"
+
+#: siabra/plantillas/perfilForm.html:53
+msgid "Crea un perfil para acordar permisos con otros usuarios."
+msgstr "Crea un perfil para acordar permisos con otros usuarios."
+
+#: siabra/plantillas/perfilForm.html:54
+msgid ""
+"Una vez creado el perfil, un código será generado y este perfil no se podrá "
+"modificar."
+msgstr ""
+"Una vez creado el perfil, un código será generado y este perfil no se podrá "
+"modificar."
+
+#: siabra/plantillas/perfilForm.html:55
+msgid "No obstante, podrás eliminarlo y crear uno nuevo."
+msgstr "No obstante, podrás eliminarlo y crear uno nuevo."
+
+#: siabra/plantillas/perfilForm.html:58
+msgid "Marca los elementos que desearías ver:"
+msgstr "Marca los elementos que desearías ver:"
+
+#: siabra/plantillas/subirImagenForm.html:13
+msgid "Mi imagen."
+msgstr "Mi imagen."
+
+#: siabra/plantillas/subirImagenForm.html:16
+msgid "Sube la imagen por la que serás reconocido."
+msgstr "Sube la imagen por la que serás reconocido."
+
+#: siabra/plantillas/subirImagenForm.html:17
+msgid "Temporalmente no será posible modificar la imagen asociada al usuario."
+msgstr "Temporalmente no será posible modificar la imagen asociada al usuario."
+
+#: siabra/plantillas/subirImagenForm.html:21
+msgid "Actualmente se realiza un reconocimiento de imagenes, no de caras."
+msgstr "Actualmente se realiza un reconocimiento de imagenes, no de caras."
+
+#: siabra/plantillas/subirImagenForm.html:22
+msgid ""
+"Por esta razón, y para obtener mejores resultados, intente utilizar una "
+"imagen que no tenga fondos lisos u homogéneos."
+msgstr ""
+"Por esta razón, y para obtener mejores resultados, intente utilizar una "
+"imagen que no tenga fondos lisos u homogéneos."
+
+#: siabra/plantillas/subirImagenForm.html:23
+msgid "Además intente que la imagen no este quemada por la luz"
+msgstr "Además intente que la imagen no este quemada por la luz"
+
+#: siabra/plantillas/subirImagenForm.html:30
+msgid "La imagen ya ha sido subida por otro usuario."
+msgstr "La imagen ya ha sido subida por otro usuario."
+
+#: siabra/plantillas/subirImagenForm.html:31
+msgid ""
+"Si la imagen es personal, vulnera su privacidad o tiene derechos de autor, "
+"contacte con nosotros."
+msgstr ""
+"Si la imagen es personal, vulnera su privacidad o tiene derechos de autor, "
+"contacte con nosotros."
+
+#: siabra/plantillas/subirImagenForm.html:34
+msgid "Actualmente tienes una imagen en el servidor:"
+msgstr "Actualmente tienes una imagen en el servidor:"
+
+#: siabra/plantillas/subirImagenForm.html:37
+msgid "La imagen podrá se reconocida pasados unos minutos de su subida."
+msgstr "La imagen podrá se reconocida pasados unos minutos de su subida."
+
+#: siabra/plantillas/subirImagenForm.html:38
+msgid "Temporalmente no es posible modificar dicha imagen en la página web."
+msgstr "Temporalmente no es posible modificar dicha imagen en la página web."
+
+#: siabra/plantillas/subirImagenForm.html:39
+msgid ""
+"Si desea cambiarla, deberá enviarnos la nueva imagen con una fotocopia del "
+"DNI a nuestro correo electrónico."
+msgstr ""
+"Si desea cambiarla, deberá enviarnos la nueva imagen con una fotocopia del "
+"DNI a nuestro correo electrónico."
+
+#: siabra/plantillas/subirImagenForm.html:40
+msgid "¡Sentimos las molestias!"
+msgstr "¡Sentimos las molestias!"
+
+#: siabra/plantillas/verificadorApp.html:9
+msgid ""
+"Vuelve a la aplicación e introduce el siguiente verificador para completar "
+"el proceso de autorización."
+msgstr ""
+"Vuelve a la aplicación e introduce el siguiente verificador para completar "
+"el proceso de autorización."
+
+#: siabra/plantillas/welcome.html:9
+msgid "Regístrese !"
+msgstr "Regístrese !"
+
+#: siabra/plantillas/welcome.html:14
+msgid "Introduzca el siguiente captcha:"
+msgstr "Introduzca el siguiente captcha:"
+
+#: siabra/plantillas/welcome.html:16
+msgid "Registrar"
+msgstr "Registrar"
+
+#: siabra/plantillas/welcome.html:32
+msgid "Visualice el 'Aviso Legal' en "
+msgstr "Visualice el 'Aviso Legal' en "
+
+#: siabra/plantillas/welcomeBase.html:34
+msgid "Nombre de usuario"
+msgstr "Nombre de usuario"
+
+#: siabra/plantillas/welcomeBase.html:39
+msgid "Iniciar sesión"
+msgstr "Iniciar sesión"

@@ -1,0 +1,9 @@
+
+{%extends 'inicio.html' %}
+{% block login %}
+	<form id='formulario' method='post' action'/ingresar/'>{% csrf_token %}
+		<table>{{formulario}}</table>
+		<p><input type='submit' value='Ingresar'/></p>
+	</form>
+		
+{% endblock %}
